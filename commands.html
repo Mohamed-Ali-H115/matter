@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matter Commands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>أوامر البوت</h1>
+            <p>هل أنت جديد على البوت وترغب في معرفة جميع الأوامر واستخدامها؟ لقد أتيت إلى المكان المناسب!</p>
+        </header>
+        <div class="search">
+            <input type="text" placeholder="🔍 البحث عن أمر">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">الكل</a></li>
+                <li><a href="#">عام</a></li>
+                <li><a href="#">لغات</a></li>
+                <li><a href="#">معلومات</a></li>
+                <li><a href="#">الإشراف</a></li>
+                <li><a href="#">بريميوم</a></li>
+            </ul>
+        </nav>
+        <section class="commands">
+            <div class="command">
+                <h2 onclick="toggleDetails('coins')">coins</h2>
+                <p>يظهر رصيدك أو رصيد شخص ما.</p>
+                <div class="details" id="coins">
+                    <p>الإستخدام:</p>
+                    <ul>
+                        <li>/coins</li>
+                        <li>/coins [user]</li>
+                    </ul>
+                    <p>أمثلة:</p>
+                    <ul>
+                        <li>/coins</li>
+                        <li>/coins [iDrone]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="command">
+                <h2 onclick="toggleDetails('daily')">daily</h2>
+                <p>إستلام المكافآت اليومية.</p>
+                <div class="details" id="daily">
+                    <p>الإستخدام:</p>
+                    <ul>
+                        <li>/daily</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="command">
+                <h2 onclick="toggleDetails('transfer')">transfer</h2>
+                <p>تحويل كوينز إلى شخص.</p>
+                <div class="details" id="transfer">
+                    <p>الإستخدام:</p>
+                    <ul>
+                        <li>/transfer [user] [coins]</li>
+                        <li>/transfer [user] [coins] [reason]</li>
+                    </ul>
+                    <p>أمثلة:</p>
+                    <ul>
+                        <li>/transfer [iDrone] [10]</li>
+                        <li>/transfer [iDrone] [10] [A GIFT!]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

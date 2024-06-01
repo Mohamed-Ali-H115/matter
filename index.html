@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matter | Discord Bot</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #0b0b0d, #1a1a1d, #2a2a2d);
+            color: #ffffff;
+            text-align: center;
+            direction: rtl;
+        }
+        .header {
+            padding: 20px 40px;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .nav .premium {
+            color: #ffac33;
+        }
+        .nav .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1d;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .nav .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            padding: 100px 20px;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #5865F2;
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .buttons a:hover {
+            background-color: #404EED; /* اللون الذي تريده عند التمرير */
+        }
+        .header .login-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #5865F2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .header .login-button:hover {
+            background-color: #404EED; /* اللون الذي تريده عند التمرير */
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Matter</span>
+        </a>
+        <div class="nav">
+            <a href="#" class="premium">بريميوم ✨</a>
+            <div class="dropdown">
+                <a href="#">المصادر ▼</a>
+                <div class="dropdown-content">
+                    <a href="commands.html">الأوامر</a>
+                    <a href="#">المصدر 2</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">المميزات ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">الميزة 1</a>
+                    <a href="#">الميزة 2</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://discord.com/oauth2/authorize?client_id=1123070722093363340&response_type=code&redirect_uri=https%3A%2F%2Fmatterbot.000webhostapp.com&scope=guilds" class="login-button">دخول</a>
+    </div>
+    <div class="content">
+        <h1>أهلًا ومرحبًا بك في الموقع الرسمي لـ ماتر</h1>
+        <p>بإستخدام الأزرار التي بالأسفل سيمكنك الوصول إلى كلّ ما يخص الموقع</p>
+        <div class="buttons">
+            <a href="dashboard.html">لوحة التحكم</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1123070722093363340&permissions=8&scope=bot">إضافة البوت في Discord</a>
+        </div>
+    </div>
+</body>
+</html>
